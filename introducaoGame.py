@@ -3,6 +3,8 @@ import arcade
 SCREEN_WIDTH = 1440
 SCREEN_HEIGHT = 1024
 SCREEN_TITLE = "Fazendinha no Distrito"
+MOVEMENT_SPEED = 5
+SPRITE_SCALING = 0.5
 
 class TelaInicio(arcade.View):
 
@@ -208,16 +210,6 @@ class TelaHistoriaTres(arcade.View):
     def on_key_press(self, key, modifiers):
         if key == arcade.key.ENTER:
             self.window.show_view(TelaJogo())
-
-
-
-
-
-
-
-
-
-
 
 
 
